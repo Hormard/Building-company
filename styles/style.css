@@ -357,6 +357,7 @@ button {
 /* Order ----------------------------------------------------------
 ---------------------------------------------------------------------------*/
 .order {
+    padding: 120px 0 231px;
     background: url(../img/backgrounds/town.jpg) no-repeat center/cover;
 }
 
@@ -365,11 +366,11 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 120px 0 231px;
     text-align: center;
 }
 
 .order__body-title {
+    width: 30%;
     font-size: 30px;
     color: #48555B;
     margin-bottom: 35px;
