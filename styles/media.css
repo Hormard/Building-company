@@ -1,0 +1,135 @@
+
+/* Mobile ----------------------------------------------------------
+---------------------------------------------------------------------------*/
+@media (max-width: 768px) {
+
+    .nav {
+        order: -1 
+    }
+
+    .nav__body {
+        width: 100%;
+        padding-left: 40px;
+    }
+
+    .nav__menu-btn {
+        display: flex;
+    }
+
+    .nav__list {
+        display: none;
+    }
+}    
+    @media (max-width: 767px) { 
+    .about {
+        padding-bottom: 80px;
+    }    
+        
+    .about__info {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .about__cards {
+        width: 100%;
+    }
+
+    .about__card-title {
+        font-size: 16px;    
+    }
+
+    .services {
+        padding: 0;
+    }
+
+    .services__header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .services__header-title {
+        margin-bottom: 42px;
+    }
+
+    .services__header-title::before {
+        left: 56px;
+    }
+
+    .services__header-text {
+        width: 100%;
+        margin-bottom: 42px;
+    }
+
+    .services__cards {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .services__card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .services__card--construction,
+    .services__card--structure,
+    .services__card--factory {
+        background-position: 50% 38px;
+    }
+
+    .signup__form {
+        flex-direction: column;
+        align-items: center;
+    }    
+
+    .signup__title {
+        margin-right: 0%;
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+    
+    .signup__mail {
+        width: 144px;
+        height: 32px;
+        font-size: 10px;
+    }
+
+    .button {
+        width: 140px;
+        height: 32px;
+    }
+    
+    .information {
+        padding: 35px 0 13px;
+    }
+
+    .information__body {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .information-company {
+        align-items: center;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .information-links {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .information-links__title {
+        text-align: center;
+    }
+
+    .information-contacts {
+        width: 100%;
+        text-align: center;
+    }
+
+    .information-icons {
+        width: 35%;
+    }
+}

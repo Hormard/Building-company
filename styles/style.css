@@ -1,0 +1,557 @@
+/* Basic config ----------------------------------------------------------
+---------------------------------------------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+input {
+    outline: none;
+}
+
+button {
+    outline: none;
+}
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1920px;
+    margin: 0 auto;
+    font-size: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    width: 75%;
+    margin: 0 auto;
+}
+
+/* Header ----------------------------------------------------------
+---------------------------------------------------------------------------*/
+.header {
+    height: 100vh;
+    text-align: center;
+    background: url(../img/backgrounds/tower.jpg) no-repeat center/cover;
+}
+
+.header__body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    width: 102px;
+    height: 23px;
+    padding-top: 41px;
+    background: url(../img/icons/logo.png) no-repeat center;
+}
+
+.header__title {
+    font-size: 50px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.header__subtitle {
+    font-size: 16px;
+    font-weight: normal;
+    color: #FFFFFF;
+}
+
+.header__scroll {
+    padding-bottom: 71px;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 3.7px;
+    color: #FFFFFF;
+    opacity: 75%;
+}
+
+/* Navigation ----------------------------------------------------------
+---------------------------------------------------------------------------*/
+.nav {
+    position: sticky;
+    z-index: 3;
+    top: 0;
+    border: 1px solid #E6E6E6;
+    background-color: #FFFFFF;
+}
+
+.nav__body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__logo {
+    display: block;
+    width: 80px;
+    height: 18px;
+    background: url(../img/icons/logo-black.png) no-repeat center;
+}
+
+.nav__list {
+    width: 411px;
+    padding: 24px 0 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__link {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #48555B;
+}
+
+.nav__link:hover {
+    font-weight: 700;
+    color: #00A4E5;
+}
+
+.nav__menu-btn {
+    position: relative;
+    z-index: 2;
+    display: none;
+    width: 50px;
+    height: 50px;
+    background: #E6E6E6;
+    cursor: pointer;
+}
+
+.nav__menu-lines,
+.nav__menu-lines::before,
+.nav__menu-lines::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background: #48555B;
+}
+
+.nav__menu-lines {
+    top: 10px;
+    left: 10px;
+}
+
+.nav__menu-lines::before {
+    top: 12px;
+}
+
+.nav__menu-lines::after {
+    top: 24px;
+}
+
+
+/* About ----------------------------------------------------------
+---------------------------------------------------------------------------*/
+.about {
+    padding: 57px 0 118px;
+}
+
+.about__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 68px;
+}
+
+.about__body {
+    flex-wrap: wrap;
+}
+
+.about__header-title {
+    position: relative;
+    z-index: 1;
+    font-size: 18px;
+    color: #48555B;
+    text-transform: uppercase;
+}
+
+.about__header-title::before {
+    content: '';
+    position: absolute;
+    top: 31px;
+    left: 24px;
+    width: 50px;
+    height: 2px;
+    background: #00A4E5;
+}
+
+.about__body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 5%;
+    width: 30%;
+}
+
+.span {
+    text-transform: uppercase;
+}
+
+.about__info-link {
+    color: #16ACE8;
+}
+
+.about__info-title {
+    font-size: 20px;
+    margin-bottom: 10%;
+    color: #48555B;
+}
+
+.about__info-text {
+    font-size: 13px;
+    color: #48555B;
+}
+
+.about__cards {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    padding-top: 23px;
+}
+
+.about__card {
+    width: 32%;
+    height: 224px;
+}
+
+.about__card--plan {
+    background: url(../img/backgrounds/plan.jpg) no-repeat center/cover;
+}
+
+.about__card--manage {
+    background: url(../img/backgrounds/laptop.jpg) no-repeat center/cover;
+}
+
+.about__card--build {
+    background: url(../img/backgrounds/glass.jpg) no-repeat center/cover;
+}
+
+.about__card-title {
+    width: 68px;
+    padding: 5% 0 0 5%;
+    font-size: 21px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+/* Services ----------------------------------------------------------
+---------------------------------------------------------------------------*/
+.services {
+    padding-bottom: 115px;
+}
+.services__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 78px;
+}
+
+.services__header-title {
+    position: relative;
+    font-size: 18px;
+    color: #48555B;
+    text-transform: uppercase;
+}
+
+.services__header-title::before {
+    content: '';
+    position: absolute;
+    top: 31px;
+    left: 0px;
+    width: 50px;
+    height: 2px;
+    background: #00A4E5;
+}
+
+.services__header-text {
+    width: 40%;
+    font-size: 11px;
+    color: #48555B;
+}
+
+.button {
+    width: 150px;
+    height: 40px;
+    background: #48555B;
+    border: none;
+    font-size: 13px;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #00A4E5
+}
+
+.button:focus {
+    border: 2px solid #00A4E5;
+}
+
+.services__body {
+    display: flex;
+}
+
+.services__cards {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.services__card {
+    width: 31%;
+    padding: 138px 2% 39px;
+    border: 1px solid #E6E6E6;
+}
+
+.services__card-title {
+    margin-bottom: 13px;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.43px;
+    color: #48555B;
+    
+}
+
+.services__card-text {
+    font-size: 13px;
+    color: #48555B;
+}
+
+.services__card--construction {
+    background: url(../img/icons/documents.png) no-repeat 23px 38px;
+}
+
+.services__card--structure {
+    background: url(../img/icons/store.png) no-repeat 23px 38px;
+}
+
+.services__card--factory {
+    background: url(../img/icons/factory.png) no-repeat 23px 38px;
+}
+
+/* Order ----------------------------------------------------------
+---------------------------------------------------------------------------*/
+.order {
+    background: url(../img/backgrounds/town.jpg) no-repeat center/cover;
+}
+
+.order__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 120px 0 231px;
+    text-align: center;
+}
+
+.order__body-title {
+    font-size: 30px;
+    color: #48555B;
+    margin-bottom: 35px;
+}
+
+.title-upper  {
+    display: block;
+}
+
+/* Footer ----------------------------------------------------------
+---------------------------------------------------------------------------*/
+.footer {
+    background: #171819;
+}
+
+.signup {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+.signup__form {
+    width: 74%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.signup__title {
+    margin-right: 5%;
+    font-size: 22px;
+    color: #FFFFFF;
+}
+
+.signup__body {
+    display: flex;
+}
+
+.signup__mail {
+    width: 250px;
+    height: 40px;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    text-indent: 10px;
+}
+
+/* Company ----------------------------------------------------------
+---------------------------------------------------------------------------*/
+.information {
+    background: #141A20;
+    padding: 42px 0 39px;
+}
+
+.information__body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.information-company {
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+}
+
+.information__title {
+    font-size: 11px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.information-company__title {
+    margin-bottom: 19px;
+}
+
+.information-company__logo {
+    width: 102px;
+    height: 23px;
+    margin-bottom: 15px;
+    background: url(../img/icons/logo.png) no-repeat center;
+}    
+
+.information-company__text {
+    font-size: 11px;
+    color: #FFFFFF;
+}
+
+/* Links ----------------------------------------------------------
+---------------------------------------------------------------------------*/
+.information-links {
+    width: 24%;
+}
+
+.information-links__title {
+    margin-bottom: 10px;
+}
+
+.information-links__lists {
+    display: flex;
+    justify-content: space-between;
+}
+
+.information-links__list {
+    display: flex;
+    flex-direction: column;
+}
+
+.information-links__item {
+    margin-bottom: 8px;
+}
+
+.information-links__link {
+    font-size: 11px;
+    font-weight: 100;
+    color: #FFFFFF;
+}
+
+/* Contacts ----------------------------------------------------------
+---------------------------------------------------------------------------*/
+.information-contacts {
+    width: 13%;
+    display: flex;
+    flex-direction: column;
+    font-size: 11px;
+}
+
+.information-contacts__title {
+    margin-bottom: 15px;
+}
+
+.information-contacts__address {
+    font-family: 'Open Sans', sans-serif;
+    color: #FFFFFF;
+}
+
+.information-contacts__telephone {
+    color: #FFFFFF;
+    margin: 20px 0;
+}
+
+.information-contacts__mail {
+    color: #FFFFFF;
+}
+
+/* Icons ----------------------------------------------------------
+---------------------------------------------------------------------------*/
+.information-icons {
+    width: 8%;
+    padding-top: 18px;
+}    
+
+.information-icons__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.information-icons__link {
+    display: block;
+    width: 12px;
+    height: 12px;
+}
+
+.information-icons__link--facebook {
+    background: url(../img/icons/facebook.png) no-repeat;
+}
+
+.information-icons__link--twitter {
+    background: url(../img/icons/twitter.png) no-repeat center/cover;
+}
+
+.information-icons__link--google {
+    background: url(../img/icons/google.png) no-repeat;
+}
+
+/* Icons ----------------------------------------------------------
+---------------------------------------------------------------------------*/
+.copy {
+    display: flex;
+    justify-content: center;
+    padding: 22px 0;
+}
+
+.copy__text {
+    font-size: 11px;
+    color: #FFFFFF;
+}
