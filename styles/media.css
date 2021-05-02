@@ -1,4 +1,5 @@
 
+
 /* Mobile ----------------------------------------------------------
 ---------------------------------------------------------------------------*/
 @media (max-width: 768px) {
@@ -75,6 +76,10 @@
     .services__card--structure,
     .services__card--factory {
         background-position: 50% 38px;
+    }
+
+    .order__body-title {
+        width: 100%;
     }
 
     .signup__form {
