@@ -370,7 +370,7 @@ button {
 }
 
 .order__body-title {
-    width: 33%;
+    width: 30%;
     font-size: 30px;
     color: #48555B;
     margin-bottom: 35px;
@@ -530,18 +530,6 @@ button {
     display: block;
     width: 12px;
     height: 12px;
-}
-
-.information-icons__link--facebook {
-    background: url(../img/icons/facebook.png) no-repeat;
-}
-
-.information-icons__link--twitter {
-    background: url(../img/icons/twitter.png) no-repeat center/cover;
-}
-
-.information-icons__link--google {
-    background: url(../img/icons/google.png) no-repeat;
 }
 
 /* Icons ----------------------------------------------------------
